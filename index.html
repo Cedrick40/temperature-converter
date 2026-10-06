@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="converter">
+    <h1>Temperature Converter</h1>
+    <p class="subtitle">Type in any box and the other two update as you type.</p>
+
+    <form id="converter-form" novalidate>
+
+      <div class="field">
+        <label for="celsius">Celsius</label>
+        <div class="input-wrap">
+          <input type="text" id="celsius" placeholder="e.g. 25" autocomplete="off">
+          <span class="unit">&deg;C</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="fahrenheit">Fahrenheit</label>
+        <div class="input-wrap">
+          <input type="text" id="fahrenheit" placeholder="e.g. 77" autocomplete="off">
+          <span class="unit">&deg;F</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="kelvin">Kelvin</label>
+        <div class="input-wrap">
+          <input type="text" id="kelvin" placeholder="e.g. 298.15" autocomplete="off">
+          <span class="unit">K</span>
+        </div>
+      </div>
+
+      <p id="message" class="message" aria-live="polite"></p>
+
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

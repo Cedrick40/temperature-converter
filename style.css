@@ -1,0 +1,112 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page: soft blue-white background, card centered */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3f7fc;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #16325c;
+}
+
+/* The converter card */
+.converter {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border: 1px solid #d5dfee;
+  border-top: 5px solid #1f5fbf;
+  border-radius: 8px;
+  padding: 32px 28px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #1f5fbf;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #6b7a90;
+  margin-bottom: 26px;
+}
+
+/* One field = label + input */
+.field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+/* The unit (°C, °F, K) sits inside the right side of the box */
+.input-wrap {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 14px 50px 14px 14px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #16325c;
+  background-color: #ffffff;
+  border: 1px solid #c5d2e6;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1f5fbf;
+  box-shadow: 0 0 0 3px rgba(31, 95, 191, 0.18);
+}
+
+.unit {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #1f5fbf;
+  pointer-events: none;   /* clicks go through to the input */
+}
+
+/* Invalid input */
+input.invalid {
+  border-color: #c0392b;
+}
+
+input.invalid:focus {
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.18);
+}
+
+.message {
+  min-height: 1.4em;   /* keeps the space so the card does not jump */
+  font-size: 0.9rem;
+  color: #c0392b;
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+  .converter {
+    padding: 24px 18px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
