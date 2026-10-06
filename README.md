@@ -2,7 +2,7 @@
 
 A live temperature converter between Celsius, Fahrenheit, and Kelvin. Built for Task 5 (Temperature Converter) of my Web Development internship.
 
-**Live page:** YOUR_GITHUB_PAGES_LINK_HERE
+**Live page:** https://cedrick40.github.io/temperature-converter/
 
 ## About the project
 
